@@ -1,51 +1,23 @@
 :root {
-  --sky: #5ec8f2;
-  --sky-soft: #e6f6fd;
-  --sea: #1b8fc8;
-  --sea-deep: #0b5a8a;
-  --foam: #20b2aa;
-  --accent: #0b6fa6;
-  --sand: #fbf4e2;
-  --sand-deep: #f1e4c4;
+  --sky: #8fdcff;
+  --sky-soft: #eefaff;
+  --sea: #1e9bd7;
+  --sea-deep: #0d6fa3;
+  --foam: #2bbfb3;
+  --accent: #0d7bb5;
+  --sand: #fffdf7;
+  --sand-deep: #fbf1d9;
   --sun: #ffc857;
-  --ink: #163447;
-  --muted: #5a7284;
+  --ink: #17364a;
+  --muted: #5b7487;
   --card: #ffffff;
-  --line: rgba(22, 52, 71, 0.12);
+  --line: rgba(23, 54, 74, 0.1);
   --radius: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --sky: #2a7fae;
-    --sky-soft: #0f2a3a;
-    --sea: #5cc3ec;
-    --sea-deep: #8fd8f5;
-    --foam: #4fd1c5;
-    --accent: #7fd0f5;
-    --sand: #0f2230;
-    --sand-deep: #16303f;
-    --sun: #ffc857;
-    --ink: #e7f4fb;
-    --muted: #9fb9c8;
-    --card: #15303f;
-    --line: rgba(231, 244, 251, 0.14);
-  }
-}
-
-:root[data-theme="dark"] {
-  --sky: #2a7fae;
-  --sky-soft: #0f2a3a;
-  --sea: #5cc3ec;
-  --sea-deep: #8fd8f5;
-  --foam: #4fd1c5;
-  --accent: #7fd0f5;
-  --sand: #0f2230;
-  --sand-deep: #16303f;
-  --ink: #e7f4fb;
-  --muted: #9fb9c8;
-  --card: #15303f;
-  --line: rgba(231, 244, 251, 0.14);
+/* Diseño siempre claro, sin modo oscuro automático */
+html {
+  color-scheme: light;
 }
 
 * {
@@ -128,11 +100,10 @@ a {
   position: relative;
   padding: 4.5rem 16px 6rem;
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 244, 190, 0.9), rgba(255, 244, 190, 0) 22%),
-    linear-gradient(180deg, #9ee3ff 0%, var(--sky) 50%, var(--sea) 100%);
-  color: #ffffff;
+    radial-gradient(circle at 84% 16%, rgba(255, 233, 150, 0.95), rgba(255, 233, 150, 0) 20%),
+    linear-gradient(180deg, #d8f3ff 0%, var(--sky) 60%, #6fcbf0 100%);
+  color: var(--sea-deep);
   overflow: hidden;
-  text-shadow: 0 1px 12px rgba(11, 90, 138, 0.35);
 }
 
 .hero-inner {
@@ -157,11 +128,15 @@ a {
   margin-bottom: 1rem;
 }
 
+.hero h1 {
+  color: #0a3d5c;
+}
+
 .hero h1 span {
   display: block;
   font-size: 0.45em;
   font-weight: 600;
-  color: #fff3b0;
+  color: var(--accent);
 }
 
 .lede {
@@ -178,10 +153,11 @@ a {
 }
 
 .facts div {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: var(--radius);
   padding: 0.75rem 1rem;
+  box-shadow: 0 4px 14px rgba(13, 111, 163, 0.12);
   backdrop-filter: blur(4px);
 }
 
@@ -217,12 +193,12 @@ a {
 }
 
 .wave-back {
-  fill: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.4);
   animation-duration: 16s;
 }
 
 .wave-mid {
-  fill: rgba(255, 255, 255, 0.45);
+  fill: rgba(255, 255, 255, 0.6);
   animation-duration: 11s;
   animation-direction: reverse;
 }
