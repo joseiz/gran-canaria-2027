@@ -26,6 +26,7 @@
       <a href="#clima">Clima</a>
       <a href="#checklist">Checklist</a>
       <a href="#info">Info</a>
+      <a href="#palabras">Palabras</a>
     </nav>
   </header>
 
@@ -379,15 +380,41 @@
 
     <section class="block" id="info">
       <div class="section-head reveal">
-        <p class="kicker">Detalles prácticos</p>
+        <p class="kicker">Para no parecer turistas</p>
         <h2>Bueno saber</h2>
+        <p class="muted">Algunas costumbres canarias que en la península no siempre se conocen.</p>
       </div>
       <ul class="info-grid">
-        <li class="reveal"><strong>Hora</strong>Canarias va una hora por detrás de Madrid y el País Vasco.</li>
-        <li class="reveal"><strong>Emergencias</strong>112 para cualquier urgencia.</li>
-        <li class="reveal"><strong>Carreteras</strong>Muchas curvas y cuestas. Los tiempos reales pueden ser más largos, así que dejen margen.</li>
-        <li class="reveal"><strong>Museos</strong>Consulten horarios y entradas de la Cueva Pintada y el Cenobio antes de ir.</li>
+        <li class="reveal"><strong>Se dice guagua</strong>Aquí el autobús es la guagua, y se espera en la parada de guagua. Las urbanas de Las Palmas son las amarillas; las que van a otros pueblos son las de Global.</li>
+        <li class="reveal"><strong>Ustedes, no vosotros</strong>En Canarias no se usa el vosotros: «¿ustedes vienen?», «¿qué quieren tomar?». No es formalidad, es lo normal.</li>
+        <li class="reveal"><strong>Una hora menos</strong>Canarias va una hora por detrás de Madrid y el País Vasco. En la radio lo oirán: «una hora menos en Canarias».</li>
+        <li class="reveal"><strong>Pedir un café</strong>Prueben el leche y leche: café con leche condensada y leche. El cortado se pide «natural» o «de leche condensada».</li>
+        <li class="reveal"><strong>Papas, no patatas</strong>Las papas arrugadas se comen con piel y mojo: el rojo pica un poco más, el verde lleva cilantro o perejil.</li>
+        <li class="reveal"><strong>El gofio</strong>Harina de millo o trigo tostado. Se toma en el desayuno, en postres o amasado. Hay hasta helado de gofio.</li>
+        <li class="reveal"><strong>Calima</strong>A veces llega aire cargado de polvo del Sáhara: el cielo se vuelve amarillento. Si pasa, es normal y suele durar pocos días.</li>
+        <li class="reveal"><strong>Carreteras</strong>Muchas curvas y cuestas. Los tiempos reales pueden ser más largos que los del mapa, así que dejen margen.</li>
       </ul>
+    </section>
+
+    <section class="block" id="palabras">
+      <div class="section-head reveal">
+        <p class="kicker">Vayan practicando</p>
+        <h2>Palabras canarias</h2>
+        <p class="muted">Pulsen una tarjeta para darle la vuelta y ver qué significa. Después pónganse a prueba con el juego.</p>
+      </div>
+
+      <div class="words" id="words"></div>
+
+      <div class="quiz reveal" id="quiz">
+        <div class="quiz-head">
+          <h3>¿Qué significa…?</h3>
+          <p class="quiz-score" aria-live="polite"><span id="quiz-score">0</span> aciertos de <span id="quiz-total">0</span></p>
+        </div>
+        <p class="quiz-word" id="quiz-word"></p>
+        <div class="quiz-options" id="quiz-options"></div>
+        <p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p>
+        <button type="button" class="btn btn-primary quiz-next" id="quiz-next">Otra palabra</button>
+      </div>
     </section>
 
     <section class="block credits" id="creditos">
@@ -424,6 +451,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="words.js" defer></script>
   <script src="effects.js" defer></script>
   <script src="map.js" defer></script>
 </body>
