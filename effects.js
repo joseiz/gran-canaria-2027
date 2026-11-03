@@ -1,5 +1,37 @@
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// Burbujas del hero: tamaños, posiciones y velocidades aleatorias
+const bubblesEl = document.getElementById("bubbles");
+
+if (bubblesEl && !reduceMotion) {
+  // Chrome y Edge admiten filtros SVG en backdrop-filter, que dan el efecto lupa
+  if (window.chrome) document.documentElement.classList.add("lens-ok");
+
+  const small = window.innerWidth < 600;
+  const count = small ? 9 : 16;
+  const rise = bubblesEl.parentElement.offsetHeight + 120;
+  const rand = (min, max) => min + Math.random() * (max - min);
+
+  for (let i = 0; i < count; i++) {
+    // Más burbujas medianas que grandes, como en la realidad
+    const size = Math.round(small ? rand(26, 80) : rand(30, 60) * (Math.random() < 0.35 ? 2 : 1));
+    const dur = rand(11, 22);
+    const bubble = document.createElement("span");
+    bubble.className = size >= 55 ? "bubble is-big" : "bubble";
+    bubble.style.setProperty("--size", `${size}px`);
+    bubble.style.setProperty("--x", `${rand(-2, 96)}%`);
+    bubble.style.setProperty("--dur", `${dur}s`);
+    // Retraso negativo para que al cargar ya haya burbujas a medio camino
+    bubble.style.setProperty("--delay", `${-rand(0, dur)}s`);
+    bubble.style.setProperty("--rise", `${rise}px`);
+    bubble.style.setProperty("--sway", `${rand(8, 26)}px`);
+    bubble.style.setProperty("--sway-dur", `${rand(2.5, 5)}s`);
+    bubble.style.setProperty("--spin-dur", `${rand(6, 14)}s`);
+    bubble.innerHTML = '<span class="bubble-body"></span>';
+    bubblesEl.appendChild(bubble);
+  }
+}
+
 // Aparecer y desaparecer al hacer scroll
 const revealItems = document.querySelectorAll(".reveal");
 
