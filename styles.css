@@ -489,6 +489,13 @@ a {
   transform: rotate(-35deg);
 }
 
+/* En móvil el recuadro del título ocupa casi todo: las burbujas pasan por delante */
+@media (max-width: 600px) {
+  .bubbles {
+    z-index: 3;
+  }
+}
+
 @keyframes bubble-rise {
   0% { transform: translate3d(0, 0, 0) scale(0.6); opacity: 0; }
   8% { opacity: 1; }
