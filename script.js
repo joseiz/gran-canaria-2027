@@ -17,7 +17,7 @@ const GROUPS = [
       "Chubasquero o cortavientos",
       "Camisetas y capas para cambiar de temperatura",
       "Calzado cómodo y cerrado para paseos cortos",
-      "Gorro, bufanda y guantes ligeros para Tejeda",
+      "Gorro y guantes ligeros por si refresca",
     ],
   },
   {
