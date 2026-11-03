@@ -2,13 +2,12 @@ const STORAGE_KEY = "gran-canaria-2027-checklist";
 
 const GROUPS = [
   {
-    title: "Documentos y llegada",
+    title: "Llegada y viaje",
     items: [
-      "DNI o pasaporte",
-      "Billetes de avión o tren y confirmación",
+      "Billetes de ida y vuelta y confirmación",
       "Confirmación del hotel en Las Palmas",
-      "Carnet de conducir (si conducís alguna etapa)",
-      "Tarjeta bancaria y algo de efectivo",
+      "Carnet de conducir (si conducen alguna etapa)",
+      "Tarjeta bancaria",
     ],
   },
   {
@@ -36,7 +35,6 @@ const GROUPS = [
     items: [
       "Medicación habitual",
       "Botiquín básico (tiritas, analgésicos)",
-      "Adaptador de enchufe (tipo C/F, no suele hacer falta)",
       "Tarjeta sanitaria o seguro de viaje",
     ],
   },
