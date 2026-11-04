@@ -1,5 +1,5 @@
 const STOPS = [
-  { id: "rincon", n: "★", group: "centro", name: "IES El Rincón", label: "Centro anfitrión", lat: 28.12848, lng: -15.44674 },
+  { id: "rincon", n: "★", group: "centro", name: "IES El Rincón", label: "Centro anfitrión", lat: 28.127591, lng: -15.446536 },
   { id: "catedral", n: 1, group: "trabajo", name: "Catedral de Santa Ana", label: "Idea para la tarde", lat: 28.10083, lng: -15.41473, img: "images/catedral-santa-ana.jpg" },
   { id: "colon", n: 2, group: "trabajo", name: "Casa de Colón", label: "Idea para la tarde", lat: 28.10138, lng: -15.41411, img: "images/calle-vegueta.jpg" },
   { id: "jardin", n: 3, group: "trabajo", name: "Jardín Botánico Viera y Clavijo", label: "Idea para la tarde", lat: 28.06441, lng: -15.46231, img: "images/jardin-botanico.jpg" },
