@@ -165,3 +165,42 @@ function initMap() {
 }
 
 initMap();
+
+// Mapa pequeño de solo lectura con la ubicación del centro (el enlace va a Google Maps)
+function initRinconMap() {
+  const mapEl = document.getElementById("mapa-rincon");
+  if (!mapEl || typeof L === "undefined") return;
+
+  const rincon = STOPS.find((s) => s.id === "rincon");
+  const map = L.map(mapEl, {
+    center: [rincon.lat, rincon.lng],
+    zoom: 16,
+    zoomControl: false,
+    dragging: false,
+    touchZoom: false,
+    scrollWheelZoom: false,
+    doubleClickZoom: false,
+    boxZoom: false,
+    keyboard: false,
+  });
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
+  }).addTo(map);
+
+  L.marker([rincon.lat, rincon.lng], {
+    icon: L.divIcon({
+      className: "pin-wrap",
+      html: `<span class="pin pin-centro">${rincon.n}</span>`,
+      iconSize: [34, 34],
+      iconAnchor: [17, 17],
+    }),
+    interactive: false,
+    keyboard: false,
+  }).addTo(map);
+
+  new ResizeObserver(() => map.invalidateSize()).observe(mapEl);
+}
+
+initRinconMap();

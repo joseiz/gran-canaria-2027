@@ -21,6 +21,7 @@
     <nav class="nav" aria-label="Secciones">
       <a href="#inicio">Inicio</a>
       <a href="#mapa">Mapa</a>
+      <a href="#ubicacion">Ubicación</a>
       <a href="#semana">Tardes</a>
       <a href="#finde">Fin de semana</a>
       <a href="#clima">Clima</a>
@@ -113,6 +114,33 @@
         <ol class="stop-list" id="stop-list"></ol>
       </div>
       <p class="map-note muted">La línea discontinua marca el orden de la excursión, no el trazado exacto de la carretera.</p>
+    </section>
+
+    <section class="block" id="ubicacion">
+      <div class="section-head reveal">
+        <p class="kicker">Dónde estamos</p>
+        <h2>Ubicación del IES El Rincón</h2>
+        <p class="muted">Pulsen el mapa o el botón para abrir el centro directamente en Google Maps.</p>
+      </div>
+
+      <div class="ubicacion-layout reveal">
+        <figure class="photo ubicacion-photo">
+          <img src="images/ies-el-rincon.jpg" alt="Fachada del IES El Rincón con su cartel azul y vista aérea del edificio del centro" loading="lazy" width="960" height="640">
+          <figcaption>IES El Rincón</figcaption>
+        </figure>
+
+        <div class="ubicacion-card">
+          <p class="ubicacion-name">IES El Rincón</p>
+          <p class="muted">Las Palmas de Gran Canaria</p>
+
+          <div class="ubicacion-map">
+            <div id="mapa-rincon" aria-hidden="true"></div>
+            <a class="ubicacion-hit" href="https://www.google.com/maps/search/?api=1&query=28.12848,-15.44674" target="_blank" rel="noopener" aria-label="Abrir la ubicación del IES El Rincón en Google Maps (se abre en una pestaña nueva)">
+              <span class="ubicacion-cta">Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="band" aria-label="Vegueta desde la torre de la catedral">

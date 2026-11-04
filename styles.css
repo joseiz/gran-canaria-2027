@@ -1690,3 +1690,114 @@ main {
     padding: 1rem 1.25rem;
   }
 }
+
+/* Ubicación del centro: foto + mapa que enlaza a Google Maps */
+.ubicacion-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.ubicacion-layout > * {
+  min-width: 0;
+}
+
+.ubicacion-photo {
+  width: 100%;
+  margin: 0;
+  align-self: start;
+}
+
+.ubicacion-photo img {
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.ubicacion-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.ubicacion-name {
+  margin: 0;
+  font-family: var(--font-display, inherit);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.ubicacion-card > .muted {
+  margin: 0;
+}
+
+.ubicacion-map {
+  position: relative;
+  flex: 1;
+  min-height: 260px;
+  margin-top: 0.8rem;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: var(--shadow);
+}
+
+#mapa-rincon {
+  position: absolute;
+  inset: 0;
+  background: var(--sky-soft);
+}
+
+#mapa-rincon .leaflet-tile-pane {
+  filter: saturate(0.75) brightness(1.04) hue-rotate(-6deg);
+}
+
+/* Capa invisible que convierte todo el mapa en un enlace a Google Maps */
+.ubicacion-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+}
+
+.ubicacion-hit:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: -6px;
+  border-radius: 20px;
+}
+
+.ubicacion-cta {
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s var(--ease);
+}
+
+.ubicacion-hit:hover .ubicacion-cta {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+  .ubicacion-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .ubicacion-map {
+    min-height: 240px;
+  }
+}
