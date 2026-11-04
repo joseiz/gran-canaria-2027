@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Fondo mar azul -->
-  <rect width="200" height="200" fill="#3b82f6"/>
+  <!-- Fondo blanco -->
+  <rect width="200" height="200" fill="#ffffff"/>
   
-  <!-- Silueta clara de Gran Canaria -->
-  <!-- Forma simplificada pero claramente reconocible como una isla -->
+  <!-- Silueta de Gran Canaria con borde negro y relleno blanco -->
   <path d="M 100 30
            C 130 32, 155 48, 162 75
            C 165 88, 160 105, 145 125
@@ -11,9 +10,8 @@
            C 85 148, 65 138, 55 125
            C 40 105, 35 88, 38 75
            C 45 48, 70 32, 100 30 Z" 
-        fill="#d4a574" stroke="#9d7a54" stroke-width="1.5"/>
+        fill="#ffffff" stroke="#000000" stroke-width="2.5" stroke-linejoin="round"/>
   
-  <!-- Detalles simples pero visibles -->
-  <!-- Punto para Roque Nublo (pico más alto) -->
-  <circle cx="100" cy="70" r="1.8" fill="#6b5b4f"/>
+  <!-- Pico para Roque Nublo -->
+  <circle cx="100" cy="70" r="1.5" fill="#000000"/>
 </svg>
