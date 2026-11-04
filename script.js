@@ -6,18 +6,17 @@ const GROUPS = [
     items: [
       "Billetes de ida y vuelta y confirmación",
       "Confirmación del hotel en Las Palmas",
-      "Carnet de conducir (si conducen alguna etapa)",
+      "Carnet de conducir (si van a conducir)",
       "Tarjeta bancaria",
     ],
   },
   {
     title: "Ropa",
     items: [
-      "Chaqueta o forro polar para las cumbres",
-      "Chubasquero o cortavientos",
+      "Chaqueta o forro polar si son frioleros",
+      "Cortavientos (la ciudad y el norte de la isla en esta época del año es ventosa)",
       "Camisetas y capas para cambiar de temperatura",
-      "Calzado cómodo y cerrado para paseos cortos",
-      "Gorro y guantes ligeros por si refresca",
+      "Calzado cómodo y cerrado por si hacemos alguna caminata",
     ],
   },
   {
@@ -25,9 +24,8 @@ const GROUPS = [
     items: [
       "Gafas de sol y protector solar",
       "Botella de agua reutilizable",
-      "Cámara o móvil con batería",
+      "Móvil y una powerbank",
       "Mochila pequeña para el día",
-      "Cargador portátil",
     ],
   },
   {
@@ -41,10 +39,8 @@ const GROUPS = [
   {
     title: "Logística del grupo",
     items: [
-      "Reparto de pasajeros por coche",
-      "Hora de salida acordada cada día",
+      "Hora de salida acordada el día del fin de semana para hacer la excursión",
       "Teléfonos de contacto del grupo",
-      "Lista de paradas impresa o guardada sin conexión",
     ],
   },
 ];
