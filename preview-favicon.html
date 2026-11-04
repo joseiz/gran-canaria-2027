@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favicon Preview - Gran Canaria</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f5f5f5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      max-width: 800px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      color: #0a3d5c;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .item {
+      text-align: center;
+    }
+    .item h2 {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .item p {
+      font-size: 13px;
+      color: #999;
+      margin-top: 10px;
+    }
+    .preview-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      background: #fafafa;
+      margin-bottom: 10px;
+    }
+    .preview-small {
+      width: 64px;
+      height: 64px;
+      border: 2px solid #ddd !important;
+      border-radius: 8px;
+    }
+    .preview-large {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #ddd !important;
+      border-radius: 12px;
+    }
+    .preview-original {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .note {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #1565c0;
+    }
+    @media (max-width: 600px) {
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏝️ Favicon de Gran Canaria</h1>
+    
+    <div class="comparison">
+      <div class="item">
+        <h2>Versión original</h2>
+        <div class="preview-box">
+          <img src="images/favicongc.png" alt="Original Gran Canaria" class="preview-original">
+        </div>
+        <p>Imagen de referencia</p>
+      </div>
+      
+      <div class="item">
+        <h2>Favicon SVG</h2>
+        <div class="preview-box">
+          <svg class="preview-large" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="200" fill="#ffffff"/>
+            <path d="M 95 35 C 110 33, 125 38, 140 48 C 155 58, 165 70, 172 85 C 175 92, 178 100, 177 108 C 176 115, 174 118, 170 120 C 173 125, 175 130, 173 138 C 170 148, 162 160, 148 168 C 135 174, 115 178, 95 180 C 90 180, 85 180, 78 180 C 75 180, 72 180, 70 179 C 60 176, 45 168, 35 158 C 28 150, 22 138, 20 128 C 18 115, 18 102, 20 92 C 22 82, 28 72, 35 62 C 42 52, 55 42, 68 38 C 75 36, 85 34, 95 35 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p>En la pestaña del navegador</p>
+      </div>
+    </div>
+
+    <div class="note">
+      ✓ El favicon ha sido creado basándose en la silueta real de Gran Canaria de la imagen favicongc.png y se usa en todas las pestañas de la web.
+    </div>
+  </div>
+</body>
+</html>
