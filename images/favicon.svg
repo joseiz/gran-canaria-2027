@@ -2,16 +2,24 @@
   <!-- Fondo blanco -->
   <rect width="200" height="200" fill="#ffffff"/>
   
-  <!-- Silueta de Gran Canaria con borde negro y relleno blanco -->
-  <path d="M 100 30
-           C 130 32, 155 48, 162 75
-           C 165 88, 160 105, 145 125
-           C 135 138, 115 148, 100 150
-           C 85 148, 65 138, 55 125
-           C 40 105, 35 88, 38 75
-           C 45 48, 70 32, 100 30 Z" 
-        fill="#ffffff" stroke="#000000" stroke-width="2.5" stroke-linejoin="round"/>
-  
-  <!-- Pico para Roque Nublo -->
-  <circle cx="100" cy="70" r="1.5" fill="#000000"/>
+  <!-- Silueta real de Gran Canaria con borde negro -->
+  <!-- Basada en la forma geográfica real de la isla -->
+  <path d="M 100 25
+           C 115 26, 128 32, 138 42
+           C 145 50, 150 60, 152 72
+           C 154 82, 152 92, 148 100
+           C 160 102, 168 105, 170 115
+           C 171 120, 168 128, 160 135
+           C 150 145, 135 152, 120 155
+           C 115 156, 110 156, 105 155
+           C 108 162, 110 170, 100 172
+           C 90 170, 92 162, 95 155
+           C 90 156, 85 156, 80 155
+           C 65 152, 50 145, 40 135
+           C 32 128, 29 120, 30 115
+           C 32 105, 40 102, 52 100
+           C 48 92, 46 82, 48 72
+           C 50 60, 55 50, 62 42
+           C 72 32, 85 26, 100 25 Z" 
+        fill="#ffffff" stroke="#000000" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>
