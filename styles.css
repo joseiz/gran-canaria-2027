@@ -1608,6 +1608,31 @@ main {
   font-weight: 800;
 }
 
+/* Logos pequeños de los centros junto a su nombre */
+.footer-centers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-centers li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.footer-centers img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-bg img,
   .wave,
