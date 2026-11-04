@@ -2,24 +2,21 @@
   <!-- Fondo blanco -->
   <rect width="200" height="200" fill="#ffffff"/>
   
-  <!-- Silueta real de Gran Canaria con borde negro -->
-  <!-- Basada en la forma geográfica real de la isla -->
-  <path d="M 100 25
-           C 115 26, 128 32, 138 42
-           C 145 50, 150 60, 152 72
-           C 154 82, 152 92, 148 100
-           C 160 102, 168 105, 170 115
-           C 171 120, 168 128, 160 135
-           C 150 145, 135 152, 120 155
-           C 115 156, 110 156, 105 155
-           C 108 162, 110 170, 100 172
-           C 90 170, 92 162, 95 155
-           C 90 156, 85 156, 80 155
-           C 65 152, 50 145, 40 135
-           C 32 128, 29 120, 30 115
-           C 32 105, 40 102, 52 100
-           C 48 92, 46 82, 48 72
-           C 50 60, 55 50, 62 42
-           C 72 32, 85 26, 100 25 Z" 
-        fill="#ffffff" stroke="#000000" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Silueta de Gran Canaria con contorno negro - basada fielmente en la imagen -->
+  <path d="M 100 22
+           C 118 24, 135 35, 145 50
+           C 152 60, 158 72, 160 85
+           C 161 95, 158 105, 152 112
+           C 165 110, 172 115, 172 128
+           C 170 138, 160 148, 145 155
+           C 130 161, 110 165, 95 165
+           C 108 170, 110 180, 100 182
+           C 90 180, 92 170, 105 165
+           C 90 165, 70 161, 55 155
+           C 40 148, 30 138, 28 128
+           C 28 115, 35 110, 48 112
+           C 42 105, 39 95, 40 85
+           C 42 72, 48 60, 55 50
+           C 65 35, 82 24, 100 22 Z" 
+        fill="#ffffff" stroke="#000000" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>
