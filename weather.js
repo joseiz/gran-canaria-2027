@@ -6,11 +6,10 @@ const LON = -15.4363;
 const fallbackData = {
   today: { max: 20, min: 15, rain: 10 },
   week: [
-    { day: 18, max: 19, min: 14, rain: 15 },
-    { day: 19, max: 21, min: 16, rain: 5 },
     { day: 20, max: 20, min: 15, rain: 20 },
     { day: 21, max: 19, min: 14, rain: 10 },
-    { day: 22, max: 18, min: 13, rain: 25 }
+    { day: 22, max: 18, min: 13, rain: 25 },
+    { day: 23, max: 19, min: 14, rain: 15 }
   ]
 };
 
@@ -82,9 +81,9 @@ async function loadWeather() {
       document.getElementById('today-weather').innerHTML = todayHTML;
     }
 
-    // Semana 18-22 enero
-    const targetStart = new Date(2027, 0, 18);
-    const targetEnd = new Date(2027, 0, 22);
+    // Jornadas del 20 al 22 de enero y excursión del sábado 23
+    const targetStart = new Date(2027, 0, 20);
+    const targetEnd = new Date(2027, 0, 23);
 
     let weekHTML = '';
     for (let i = 0; i < daily.time.length; i++) {

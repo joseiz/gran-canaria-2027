@@ -6,11 +6,11 @@ const STOPS = [
   { id: "bandama", n: 4, group: "trabajo", name: "Caldera de Bandama", label: "Idea para la tarde", lat: 28.03751, lng: -15.45785, img: "images/caldera-bandama.jpg" },
   { id: "mercado", n: 5, group: "trabajo", name: "Mercado del Puerto", label: "Idea para la tarde", lat: 28.14766, lng: -15.42911, img: "images/mercado-puerto.jpg" },
   { id: "canteras", n: 6, group: "trabajo", name: "Paseo de Las Canteras", label: "Idea para la tarde", lat: 28.13955, lng: -15.43663, img: "images/las-canteras.jpg" },
-  { id: "teror", n: 7, group: "finde", name: "Teror", label: "Fin de semana", lat: 28.0593, lng: -15.54781, img: "images/teror-basilica.jpg" },
-  { id: "arucas", n: 8, group: "finde", name: "Catedral de Arucas", label: "Fin de semana", lat: 28.11857, lng: -15.52306, img: "images/arucas-catedral.jpg" },
-  { id: "cenobio", n: 9, group: "finde", name: "Cenobio de Valerón", label: "Fin de semana", lat: 28.13896, lng: -15.60444, img: "images/cenobio-valeron.jpg" },
-  { id: "galdar", n: 10, group: "finde", name: "Cueva Pintada, Gáldar", label: "Fin de semana", lat: 28.14402, lng: -15.65508, img: "images/cueva-pintada.jpg" },
-  { id: "agaete", n: 11, group: "finde", name: "Agaete y Puerto de las Nieves", label: "Fin de semana", lat: 28.10014, lng: -15.71303, img: "images/agaete-dedo-de-dios.jpg" },
+  { id: "teror", n: 7, group: "finde", name: "Teror", label: "Excursión · sábado 23", lat: 28.0593, lng: -15.54781, img: "images/teror-basilica.jpg" },
+  { id: "arucas", n: 8, group: "finde", name: "Catedral de Arucas", label: "Excursión · sábado 23", lat: 28.11857, lng: -15.52306, img: "images/arucas-catedral.jpg" },
+  { id: "cenobio", n: 9, group: "finde", name: "Cenobio de Valerón", label: "Excursión · sábado 23", lat: 28.13896, lng: -15.60444, img: "images/cenobio-valeron.jpg" },
+  { id: "galdar", n: 10, group: "finde", name: "Cueva Pintada, Gáldar", label: "Excursión · sábado 23", lat: 28.14402, lng: -15.65508, img: "images/cueva-pintada.jpg" },
+  { id: "agaete", n: 11, group: "finde", name: "Agaete y Puerto de las Nieves", label: "Excursión · sábado 23", lat: 28.10014, lng: -15.71303, img: "images/agaete-dedo-de-dios.jpg" },
 ];
 
 // Zonas aproximadas que se muestran sombreadas en el mapa
